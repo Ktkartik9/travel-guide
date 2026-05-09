@@ -1,7 +1,7 @@
 
-const UNSPLASH_KEY  = 'WO5A5NK84df5h9XtnPFq_idbJ94vi7Jtsl7d28X0ZQ8';
-const OWM_KEY       = '0b3c3826f747f23b0f9ffb146720130c';
-const GEOAPIFY_KEY  = '9c701c41db8346afa958dfb5e6f8a1bd';
+const UNSPLASH_KEY  = 'YOUR_API_KEY';
+const OWM_KEY       = 'YOUR_API_KEY';
+const GEOAPIFY_KEY  = 'YOUR_API_KEY';
 
 const UNSPLASH_BASE = 'https://api.unsplash.com/search/photos';
 const OWM_BASE      = 'https://api.openweathermap.org/data/2.5/weather';
