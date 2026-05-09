@@ -1,0 +1,106 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8"/>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Travel Intelligence Guide</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com"/>
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin/>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,600;0,700;1,300;1,400&family=DM+Sans:wght@300;400;500&display=swap" rel="stylesheet"/>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+
+  <div id="loading-bar"></div>
+
+  <section id="hero">
+    <div id="hero-bg"></div>
+    <div id="hero-overlay"></div>
+    <div id="hero-content">
+      <p class="eyebrow">✦ Travel Intelligence Guide</p>
+      <h1 class="hero-title">Discover the<br/><em>Soul of a City</em></h1>
+      <p class="hero-subtitle">Weather · Attractions · Hotels · 7-Day Budget — All in one search</p>
+      <div id="search-wrap">
+        <input type="text" id="city-input" placeholder="Enter a city name…" autocomplete="off"/>
+        <button id="search-btn">Explore</button>
+      </div>
+      <div id="error-msg"></div>
+
+      <div id="weather-card">
+        <div class="weather-top">
+          <div class="weather-info">
+            <div class="weather-city" id="w-city">—</div>
+            <div class="weather-temp" id="w-temp">—°</div>
+            <div class="weather-desc" id="w-desc">—</div>
+          </div>
+          <div id="w-icon" class="weather-icon"></div>
+        </div>
+        <div class="weather-meta">
+          <span class="weather-meta-item">💧 <span id="w-humidity">—</span>% Humidity</span>
+          <span class="weather-meta-item">🌬 <span id="w-wind">—</span> km/h Wind</span>
+          <span class="weather-meta-item">🌡 Feels <span id="w-feels">—</span>°C</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="places-section" class="content-section">
+    <div class="section-header">
+      <div class="section-header-left">
+        <p class="section-eyebrow">✦ Geoapify Powered</p>
+        <h2 class="section-title">Top <em>Places</em> to Visit</h2>
+      </div>
+      <span class="section-meta" id="places-meta">—</span>
+    </div>
+    <div id="places-grid" class="card-grid"></div>
+    <div id="places-empty" class="empty-state">
+      <div class="empty-icon">🗺</div>
+      <div class="empty-title">Search a city to discover its finest spots</div>
+    </div>
+  </section>
+
+
+  <section id="hotels-section" class="content-section alt-section">
+    <div class="section-header">
+      <div class="section-header-left">
+        <p class="section-eyebrow">✦ Geoapify Powered</p>
+        <h2 class="section-title">Recommended <em>Hotels</em></h2>
+      </div>
+      <span class="section-meta" id="hotels-meta">—</span>
+    </div>
+    <div id="hotels-grid" class="card-grid"></div>
+    <div id="hotels-empty" class="empty-state">
+      <div class="empty-icon">🏨</div>
+      <div class="empty-title">Hotel data will appear after your search</div>
+    </div>
+  </section>
+
+  
+  <section id="itinerary-section" class="content-section">
+    <div class="section-header">
+      <div class="section-header-left">
+        <p class="section-eyebrow">✦ Smart Budget Estimator</p>
+        <h2 class="section-title">7-Day <em>Itinerary</em> &amp; Budget</h2>
+      </div>
+      <span class="section-meta" id="itinerary-meta">—</span>
+    </div>
+    <div id="budget-summary"></div>
+    <div id="itinerary-grid" class="itinerary-grid"></div>
+    <div id="itinerary-empty" class="empty-state">
+      <div class="empty-icon">🗓</div>
+      <div class="empty-title">Search a city to generate your personalised travel plan</div>
+    </div>
+  </section>
+
+  
+  <footer>
+    <p>Crafted with <span class="footer-heart">♥</span> Travel Intelligence Guide</p>
+    <p class="footer-sub"># OpenWeatherMap # Geoapify Places # Budget estimates are indicative only</p>
+    <p class="footer-sub">  kartik guide </p>
+  </footer>
+
+  <!-- External JavaScript — all logic lives in script.js -->
+  <script src="script.js"></script>
+
+</body>
+</html>
