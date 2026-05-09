@@ -30,7 +30,7 @@ This project is built using APIs to provide real-time city exploration data and 
 - CSS
 - JavaScript
 - API Integration
-- Git & GitHub
+
 
 ---
 
